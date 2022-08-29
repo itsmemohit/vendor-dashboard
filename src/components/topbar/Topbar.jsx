@@ -2,6 +2,7 @@ import React from "react";
 import "./topbar.css";
 import { NotificationsNone, Language, Settings } from "@material-ui/icons";
 import PersonIcon from '@mui/icons-material/Person';
+import Button from '@mui/material/Button';
 
 export default function Topbar() {
   return (
@@ -12,17 +13,10 @@ export default function Topbar() {
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-            <NotificationsNone />
-            <span className="topIconBadge">2</span>
+            <Button variant="outlined" size="medium">
+              Log In
+            </Button>
           </div>
-          <div className="topbarIconContainer">
-            <Language />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Settings />
-          </div>
-
           <PersonIcon className="topAvatar" />
         </div>
       </div>

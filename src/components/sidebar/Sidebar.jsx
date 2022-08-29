@@ -13,6 +13,15 @@ import {
   WorkOutline,
   Report,
 } from "@material-ui/icons";
+import UploadIcon from '@mui/icons-material/Upload';
+import AddCircleOutlineSharpIcon from '@mui/icons-material/AddCircleOutlineSharp';
+import DesignServicesSharpIcon from '@mui/icons-material/DesignServicesSharp';
+import PermMediaSharpIcon from '@mui/icons-material/PermMediaSharp';
+import IconButton from '@mui/material/IconButton';
+import Badge from '@mui/material/Badge';
+import MailIcon from '@mui/icons-material/Mail';
+import notificationsLabel from '@mui/icons-material/Notifications';
+import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -53,29 +62,35 @@ export default function Sidebar() {
               <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
-            {/* <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
-              Reports
-            </li> */}
-          </ul>
-        </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Notifications</h3>
-          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <UploadIcon className="sidebarIcon" />
+              Upload Services
+            </li>
+            <li className="sidebarListItem">
+              <AddCircleOutlineSharpIcon className="sidebarIcon" />
+              Accept request from vendors
+            </li>
+            <li className="sidebarListItem">
+              <DesignServicesSharpIcon className="sidebarIcon" />
+              Total Services
+            </li>
             <li className="sidebarListItem">
               <MailOutline className="sidebarIcon" />
               Testimonials
             </li>
             <li className="sidebarListItem">
-              <DynamicFeed className="sidebarIcon" />
+              <PermMediaSharpIcon className="sidebarIcon" />
               Gallery
             </li>
-            {/* <li className="sidebarListItem">
-              <ChatBubbleOutline className="sidebarIcon" />
-              Messages
-            </li> */}
+            <li className="sidebarListItem">
+              <Badge badgeContent={10} color="secondary" >
+                <MailIcon className="sidebarIcon" />
+              </Badge>
+              Complaints
+            </li>
           </ul>
         </div>
+
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Profiles</h3>
           <ul className="sidebarList">
@@ -83,16 +98,15 @@ export default function Sidebar() {
               <WorkOutline className="sidebarIcon" />
               Manage
             </li>
-            {/* <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
-            </li> */}
             <li className="sidebarListItem">
               <Report className="sidebarIcon" />
               Settings
             </li>
           </ul>
         </div>
+        <Button variant="outlined" color="error">
+          log out
+        </Button>
       </div>
     </div>
   );
