@@ -9,6 +9,9 @@ import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
+import Transactions from "./components/widgetLg/WidgetLg";
+import Cards from "./components/cards/cards";
+import Manage from "./pages/manage/managerUser";
 
 function App() {
   return (
@@ -37,6 +40,33 @@ function App() {
           </Route>
           <Route path="/newproduct">
             <NewProduct />
+          </Route>
+          <Route path="/Transactions">
+            <Transactions />
+          </Route>
+          <Route path="/UploadServices">
+            <Transactions />
+          </Route>
+          <Route path="/vendorRequest">
+            <Cards />
+          </Route>
+          <Route path="/totalServices">
+            <Cards />
+          </Route>
+          <Route path="/testimonials">
+            <Cards />
+          </Route>
+          <Route path="/gallery">
+            <Cards />
+          </Route>
+          <Route path="/complaint">
+            <Cards />
+          </Route>
+          <Route path="/ManageProfile">
+            <User />
+          </Route>
+          <Route path="/Setting">
+            <User />
           </Route>
         </Switch>
       </div>

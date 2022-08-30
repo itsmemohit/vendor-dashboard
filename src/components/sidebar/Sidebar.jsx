@@ -32,7 +32,7 @@ export default function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-              <li className="sidebarListItem active">
+              <li className="sidebarListItem">
                 <LineStyle className="sidebarIcon" />
                 Dashboard
               </li>
@@ -46,62 +46,74 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            {/* <Link to="/users" className="link">
+            <Link to="/users" className="link">
               <li className="sidebarListItem">
                 <PermIdentity className="sidebarIcon" />
                 Users
               </li>
-            </Link> */}
+            </Link>
             <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
                 Total Listed Products
               </li>
             </Link>
-            <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
-            </li>
-            <li className="sidebarListItem">
-              <UploadIcon className="sidebarIcon" />
-              Upload Services
-            </li>
-            <li className="sidebarListItem">
-              <AddCircleOutlineSharpIcon className="sidebarIcon" />
-              Accept request from vendors
-            </li>
-            <li className="sidebarListItem">
-              <DesignServicesSharpIcon className="sidebarIcon" />
-              Total Services
-            </li>
-            <li className="sidebarListItem">
-              <MailOutline className="sidebarIcon" />
-              Testimonials
-            </li>
-            <li className="sidebarListItem">
-              <PermMediaSharpIcon className="sidebarIcon" />
-              Gallery
-            </li>
-            <li className="sidebarListItem">
-              <Badge badgeContent={10} color="secondary" >
-                <MailIcon className="sidebarIcon" />
-              </Badge>
-              Complaints
-            </li>
+            <Link to="/Transactions" className="link">
+              <li className="sidebarListItem">
+                <AttachMoney className="sidebarIcon" />
+                Transactions
+              </li>
+            </Link>
+            <Link to="/vendorRequest" className="link">
+              <li className="sidebarListItem">
+                <AddCircleOutlineSharpIcon className="sidebarIcon" />
+                Accept request from vendors
+              </li>
+            </Link>
+            <Link to="totalServices" className="link">
+              <li className="sidebarListItem">
+                <DesignServicesSharpIcon className="sidebarIcon" />
+                Total Services
+              </li>
+            </Link>
+            <Link to="Testimonials" className="link">
+              <li className="sidebarListItem">
+                <MailOutline className="sidebarIcon" />
+                Testimonials
+              </li>
+            </Link>
+            <Link to="Gallery" className="link">
+              <li className="sidebarListItem">
+                <PermMediaSharpIcon className="sidebarIcon" />
+                Gallery
+              </li>
+            </Link>
+            <Link to="complaint" className="link">
+              <li className="sidebarListItem">
+                <Badge badgeContent={10} color="secondary" >
+                  <MailIcon className="sidebarIcon" />
+                </Badge>
+                Complaints
+              </li>
+            </Link>
           </ul>
         </div>
 
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Profiles</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <WorkOutline className="sidebarIcon" />
-              Manage
-            </li>
-            <li className="sidebarListItem">
-              <Report className="sidebarIcon" />
-              Settings
-            </li>
+            <Link to="ManageProfile">
+              <li className="sidebarListItem">
+                <WorkOutline className="sidebarIcon" />
+                Manage
+              </li>
+            </Link>
+            <Link to='setting' className="link">
+              <li className="sidebarListItem">
+                <Report className="sidebarIcon" />
+                Settings
+              </li>
+            </Link>
           </ul>
         </div>
         <Button variant="outlined" color="error">
