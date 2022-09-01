@@ -12,6 +12,7 @@ import NewProduct from "./pages/newProduct/NewProduct";
 import Transactions from "./components/widgetLg/WidgetLg";
 import Cards from "./components/cards/cards";
 import Manage from "./pages/manage/managerUser";
+import Gallery from './pages/gallery/gallery';
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
             <Cards />
           </Route>
           <Route path="/gallery">
-            <Cards />
+            <Gallery />
           </Route>
           <Route path="/complaint">
             <Cards />
