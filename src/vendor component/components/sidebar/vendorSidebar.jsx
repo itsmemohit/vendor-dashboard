@@ -17,94 +17,94 @@ import MailIcon from '@mui/icons-material/Mail';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 
-export default function Sidebar() {
+export default function vendorSidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Dashboard</h3>
+          <h3 className="sidebarTitle">Vendor Dashboard</h3>
           <ul className="sidebarList">
-            <Link to="/" className="link">
+            <Link to="/vendor" className="link">
               <li className="sidebarListItem">
                 <LineStyle className="sidebarIcon" />
-                Dashboard
+                Vendor Dashboard
               </li>
             </Link>
             <li className="sidebarListItem">
               <TrendingUp className="sidebarIcon" />
-              History
+              Vendor History
             </li>
           </ul>
         </div>
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <Link to="/users" className="link">
+            <Link to="/vendorusers" className="link">
               <li className="sidebarListItem">
                 <PermIdentity className="sidebarIcon" />
-                Users
+                Vendor Users
               </li>
             </Link>
-            <Link to="/products" className="link">
+            <Link to="/vendorproducts" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
-                Total Listed Products
+                Vendor Total Listed Products
               </li>
             </Link>
-            <Link to="/Transactions" className="link">
+            <Link to="/vendorTransactions" className="link">
               <li className="sidebarListItem">
                 <AttachMoney className="sidebarIcon" />
-                Transactions
+                Vendor Transactions
               </li>
             </Link>
-            <Link to="/vendorrRequest" className="link">
+            <Link to="/vendorRequest" className="link">
               <li className="sidebarListItem">
                 <AddCircleOutlineSharpIcon className="sidebarIcon" />
-                Accept request from vendors
+                Vendor Accept request from vendors
               </li>
             </Link>
-            <Link to="totalServices" className="link">
+            <Link to="vendortotalServices" className="link">
               <li className="sidebarListItem">
                 <DesignServicesSharpIcon className="sidebarIcon" />
-                Total Services
+                Vendor Total Services
               </li>
             </Link>
-            <Link to="Testimonials" className="link">
+            <Link to="vendorTestimonials" className="link">
               <li className="sidebarListItem">
                 <MailOutline className="sidebarIcon" />
-                Testimonials
+                Vendor Testimonials
               </li>
             </Link>
-            <Link to="Gallery" className="link">
+            <Link to="vendorGallery" className="link">
               <li className="sidebarListItem">
                 <PermMediaSharpIcon className="sidebarIcon" />
-                Gallery
+                Vendor Gallery
               </li>
             </Link>
-            <Link to="complaint" className="link">
+            <Link to="vendorcomplaint" className="link">
               <li className="sidebarListItem">
                 <Badge badgeContent={10} color="secondary" >
                   <MailIcon className="sidebarIcon" />
                 </Badge>
-                Complaints
+                Vendor Complaints
               </li>
             </Link>
           </ul>
         </div>
 
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Profiles</h3>
+          <h3 className="sidebarTitle">Vendor Profiles</h3>
           <ul className="sidebarList">
-            <Link to="ManageProfile">
+            <Link to="vendorManageProfile">
               <li className="sidebarListItem">
                 <WorkOutline className="sidebarIcon" />
-                Manage
+                Vendor Manage
               </li>
             </Link>
-            <Link to='setting' className="link">
+            <Link to='vendorsetting' className="link">
               <li className="sidebarListItem">
                 <Report className="sidebarIcon" />
-                Settings
+                Vendor Settings
               </li>
             </Link>
           </ul>

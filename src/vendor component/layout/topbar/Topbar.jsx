@@ -1,14 +1,10 @@
 import React from "react";
 import "./topbar.css";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
 import PersonIcon from '@mui/icons-material/Person';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import {
-  FormGroup, Form, Input, Label
-} from 'reactstrap';
 import Avatar from '@mui/material/Avatar';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -46,7 +42,7 @@ function Copyright(props) {
 }
 
 const theme = createTheme();
-export default function Topbar() {
+export default function VendorTopbar() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -154,6 +150,14 @@ export default function Topbar() {
                           sx={{ mt: 3, mb: 2 }}
                         >
                           Sign In
+                        </Button>
+                        <Button
+                          type="submit"
+                          fullWidth
+                          variant="contained"
+                          sx={{ mt: 3, mb: 2 }}
+                        >
+                          Sign in as vendor
                         </Button>
                         <Grid container>
                           <Grid item xs>
